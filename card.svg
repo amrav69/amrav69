@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      text { font-family: "JetBrains Mono", "Courier New", monospace; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="barPy" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3776AB"/>
+      <stop offset="100%" stop-color="#00D9FF"/>
+    </linearGradient>
+    <linearGradient id="barRs" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF6B35"/>
+      <stop offset="100%" stop-color="#CE422B"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Window background -->
+  <rect width="720" height="380" rx="12" ry="12" fill="url(#bg)" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Title bar -->
+  <rect width="720" height="40" rx="12" ry="12" fill="#161b22"/>
+  <rect y="28" width="720" height="12" fill="#161b22"/>
+  <rect y="28" width="720" height="1" fill="#21262d"/>
+
+  <!-- Traffic lights -->
+  <circle cx="20" cy="20" r="6" fill="#FF5F57"/>
+  <circle cx="40" cy="20" r="6" fill="#FFBD2E"/>
+  <circle cx="60" cy="20" r="6" fill="#28C840"/>
+
+  <!-- Title bar text -->
+  <text x="360" y="25" text-anchor="middle" font-size="12" fill="#8b949e">amrav69 — zsh — 100×35</text>
+
+  <!-- LEFT PANEL: Profile card -->
+  <!-- Subtle left panel bg -->
+  <rect x="16" y="56" width="240" height="308" rx="8" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Avatar placeholder circle with initials -->
+  <circle cx="136" cy="110" r="40" fill="#161b22" stroke="#00D9FF" stroke-width="1.5"/>
+  <text x="136" y="116" text-anchor="middle" font-size="22" font-weight="700" fill="#00D9FF">MR</text>
+
+  <!-- Name -->
+  <text x="136" y="168" text-anchor="middle" font-size="13" font-weight="700" fill="#e6edf3">mandapati ram sri varma</text>
+  <text x="136" y="184" text-anchor="middle" font-size="11" fill="#8b949e">@amrav69 · he/him</text>
+
+  <!-- Divider -->
+  <line x1="32" y1="196" x2="240" y2="196" stroke="#21262d" stroke-width="1"/>
+
+  <!-- About section -->
+  <text x="32" y="214" font-size="9" font-weight="700" fill="#00D9FF" letter-spacing="1">ABOUT</text>
+  <circle cx="42" cy="228" r="4" fill="#28C840" filter="url(#glow)"/>
+  <text x="52" y="232" font-size="11" fill="#e6edf3">building quant × AI systems</text>
+  <text x="32" y="248" font-size="11" fill="#8b949e">b.tech ai/ds</text>
+
+  <!-- Divider -->
+  <line x1="32" y1="258" x2="240" y2="258" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Stats -->
+  <text x="32" y="276" font-size="9" font-weight="700" fill="#00D9FF" letter-spacing="1">GITHUB STATS</text>
+
+  <text x="32" y="293" font-size="10" fill="#8b949e">repos</text>
+  <rect x="90" y="284" width="120" height="6" rx="3" fill="#21262d"/>
+  <rect x="90" y="284" width="40" height="6" rx="3" fill="#00D9FF"/>
+  <text x="218" y="293" text-anchor="end" font-size="10" fill="#e6edf3">8</text>
+
+  <text x="32" y="309" font-size="10" fill="#8b949e">stars</text>
+  <rect x="90" y="300" width="120" height="6" rx="3" fill="#21262d"/>
+  <rect x="90" y="300" width="15" height="6" rx="3" fill="#FFBD2E"/>
+  <text x="218" y="309" text-anchor="end" font-size="10" fill="#e6edf3">3</text>
+
+  <text x="32" y="325" font-size="10" fill="#8b949e">followers</text>
+  <rect x="90" y="316" width="120" height="6" rx="3" fill="#21262d"/>
+  <rect x="90" y="316" width="5" height="6" rx="3" fill="#FF6B35"/>
+  <text x="218" y="325" text-anchor="end" font-size="10" fill="#e6edf3">2</text>
+
+  <!-- Divider -->
+  <line x1="32" y1="335" x2="240" y2="335" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Top langs -->
+  <text x="32" y="352" font-size="9" font-weight="700" fill="#00D9FF" letter-spacing="1">TOP LANGS</text>
+  <text x="32" y="366" font-size="10" fill="#8b949e">Python</text>
+  <rect x="90" y="358" width="120" height="6" rx="3" fill="#21262d"/>
+  <rect x="90" y="358" width="84" height="6" rx="3" fill="url(#barPy)"/>
+  <text x="218" y="366" text-anchor="end" font-size="10" fill="#e6edf3">70%</text>
+
+  <text x="32" y="351" font-size="10" fill="transparent">.</text>
+
+  <!-- RIGHT PANEL: Terminal output -->
+  <rect x="272" y="56" width="432" height="308" rx="8" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Prompt lines -->
+  <text x="288" y="82" font-size="12" fill="#00D9FF">❯</text>
+  <text x="304" y="82" font-size="12" fill="#e6edf3">cat mission.txt</text>
+
+  <text x="288" y="100" font-size="11" fill="#8b949e">  Build autonomous systems that</text>
+  <text x="288" y="116" font-size="11" fill="#8b949e">  analyse, adapt and execute.</text>
+
+  <text x="288" y="136" font-size="12" fill="#00D9FF">❯</text>
+  <text x="304" y="136" font-size="12" fill="#e6edf3">ls ./active-projects/</text>
+
+  <!-- Project list -->
+  <text x="288" y="154" font-size="11" fill="#28C840">📦 agentic-quant-sandbox/</text>
+  <text x="308" y="170" font-size="10" fill="#8b949e">3-agent AI trading pipeline</text>
+  <text x="308" y="184" font-size="10" fill="#8b949e">Research · CodeGen · Critic</text>
+
+  <text x="288" y="202" font-size="11" fill="#FF6B35">📦 mandatepay/</text>
+  <text x="308" y="218" font-size="10" fill="#8b949e">Ed25519 payment mandates</text>
+  <text x="308" y="232" font-size="10" fill="#8b949e">for autonomous AI agents</text>
+
+  <text x="288" y="252" font-size="12" fill="#00D9FF">❯</text>
+  <text x="304" y="252" font-size="12" fill="#e6edf3">stack --list</text>
+
+  <!-- Stack badges row 1 -->
+  <rect x="288" y="260" width="58" height="18" rx="4" fill="#3776AB22" stroke="#3776AB" stroke-width="1"/>
+  <text x="317" y="273" text-anchor="middle" font-size="10" fill="#3776AB">Python</text>
+
+  <rect x="352" y="260" width="44" height="18" rx="4" fill="#CE422B22" stroke="#CE422B" stroke-width="1"/>
+  <text x="374" y="273" text-anchor="middle" font-size="10" fill="#CE422B">Rust</text>
+
+  <rect x="402" y="260" width="62" height="18" rx="4" fill="#009688" fill-opacity="0.15" stroke="#009688" stroke-width="1"/>
+  <text x="433" y="273" text-anchor="middle" font-size="10" fill="#009688">FastAPI</text>
+
+  <rect x="470" y="260" width="68" height="18" rx="4" fill="#FF6B3522" stroke="#FF6B35" stroke-width="1"/>
+  <text x="504" y="273" text-anchor="middle" font-size="10" fill="#FF6B35">LangGraph</text>
+
+  <rect x="544" y="260" width="54" height="18" rx="4" fill="#DC382D22" stroke="#DC382D" stroke-width="1"/>
+  <text x="571" y="273" text-anchor="middle" font-size="10" fill="#DC382D">Redis</text>
+
+  <!-- Stack badges row 2 -->
+  <rect x="288" y="284" width="68" height="18" rx="4" fill="#47A24822" stroke="#47A248" stroke-width="1"/>
+  <text x="322" y="297" text-anchor="middle" font-size="10" fill="#47A248">MongoDB</text>
+
+  <rect x="362" y="284" width="54" height="18" rx="4" fill="#2496ED22" stroke="#2496ED" stroke-width="1"/>
+  <text x="389" y="297" text-anchor="middle" font-size="10" fill="#2496ED">Docker</text>
+
+  <rect x="422" y="284" width="74" height="18" rx="4" fill="#1C3C3C" stroke="#1C3C3C" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="459" y="297" text-anchor="middle" font-size="10" fill="#e6edf3">LangChain</text>
+
+  <rect x="502" y="284" width="60" height="18" rx="4" fill="#150458" stroke="#150458" stroke-width="1"/>
+  <text x="532" y="297" text-anchor="middle" font-size="10" fill="#e6edf3">pandas</text>
+
+  <!-- Blinking cursor prompt -->
+  <text x="288" y="320" font-size="12" fill="#00D9FF">❯</text>
+  <rect x="305" y="308" width="8" height="14" rx="1" fill="#00D9FF" opacity="0.9"/>
+
+  <!-- Bottom bar -->
+  <line x1="272" y1="340" x2="704" y2="340" stroke="#21262d" stroke-width="1"/>
+  <text x="288" y="356" font-size="10" fill="#8b949e">ramsrivarma5@gmail.com</text>
+  <text x="695" y="356" text-anchor="end" font-size="10" fill="#8b949e">$ npx amrav69</text>
+</svg>
