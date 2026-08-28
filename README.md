@@ -1,7 +1,7 @@
-﻿<div align="center">
+<div align="center">
 
 <!-- Animated typing header -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=3000&pause=800&color=00D9FF&center=true&vCenter=true&multiline=true&width=700&height=100&lines=Mandapati+Ram+Sri+Varma;Quant+Dev+%7C+Systems+Engineer+%7C+AI+Agent+Architect)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=800&color=00D9FF&center=true&vCenter=true&multiline=true&width=860&height=120&lines=Mandapati+Ram+Sri+Varma;Quant+Dev+%7C+Systems+Engineer+%7C+AI+Agent+Architect)](https://git.io/typing-svg)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Focus-Autonomous%20Trading%20Systems-00D9FF?style=for-the-badge&logo=target&logoColor=white" />
