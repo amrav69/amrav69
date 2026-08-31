@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- Terminal card hero -->
+<!-- Terminal card — self-hosted, no external API -->
 <img src="./card.svg" alt="amrav69 terminal card" width="720"/>
 
 </div>
@@ -16,34 +16,42 @@
 
 ---
 
-## 🏆 GitHub Trophies
+## 🛠️ Stack
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=amrav69&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1)](https://github.com/ryo-ma/github-profile-trophy)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-CE422B?style=for-the-badge&logo=rust&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-FF6B35?style=for-the-badge&logo=graphql&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 </div>
 
 ---
 
-## 📊 Stats
+## 📊 Contribution Streak
 
 <div align="center">
 
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=amrav69&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=C9D1D9" />
-<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amrav69&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9" />
+[![GitHub Streak](https://streak-stats.demolab.com?user=amrav69&theme=tokyonight-duo&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B35&currStreakLabel=C9D1D9&sideLabels=C9D1D9)](https://git.io/streak-stats)
 
 </div>
 
-<div align="center">
+---
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=amrav69&theme=tokyonight-duo&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B35&currStreakLabel=C9D1D9)](https://git.io/streak-stats)
-
-</div>
+## 🐍 Contribution Snake
 
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=amrav69&theme=tokyo-night&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FF6B35&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/amrav69/amrav69/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/amrav69/amrav69/output/snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/amrav69/amrav69/output/snake.svg" />
+</picture>
 
 </div>
 
