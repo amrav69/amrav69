@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- Terminal card — self-hosted, no external API -->
+<!-- Terminal identity card — self-hosted -->
 <img src="./card.svg" alt="amrav69 terminal card" width="720"/>
 
 </div>
@@ -43,15 +43,10 @@
 
 ---
 
-## 🐍 Contribution Snake
-
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/amrav69/amrav69/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/amrav69/amrav69/output/snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/amrav69/amrav69/output/snake.svg" />
-</picture>
+<!-- Algo trading terminal — self-hosted -->
+<img src="./card2.svg" alt="live trading terminal" width="720"/>
 
 </div>
 
@@ -65,10 +60,4 @@
 [![Email](https://img.shields.io/badge/Email-ramsrivarma5%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ramsrivarma5@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-amrav69-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amrav69)
 
-</div>
-
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&text=&fontSize=0" />
 </div>
