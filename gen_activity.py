@@ -93,7 +93,7 @@ def collect_daily_counts():
 
 
 def build_svg(days, counts):
-    W, H = 720, 280
+    W, H = 720, 300
     CX, CY, CW, CH = 40, 70, 640, 130
     total = sum(counts)
     active = sum(1 for c in counts if c > 0)
@@ -145,6 +145,24 @@ def build_svg(days, counts):
 
     max_note = ""
 
+    # Date under every bar (empty or not), rotated vertical so 30 labels fit.
+    # Anchor at the top, text runs downward, read top-to-bottom.
+    dates = []
+    for i, d in enumerate(days):
+        mid = CX + (i + 0.5) * (CW / len(counts))
+        if i == len(counts) - 1:
+            fill, weight = "#00D9FF", ' font-weight="700"'
+        elif counts[i] > 0:
+            fill, weight = "#8b949e", ""
+        else:
+            fill, weight = "#484f58", ""
+        dates.append(
+            f'<text x="{mid:.1f}" y="208" transform="rotate(-90,{mid:.1f},208)" '
+            f'text-anchor="end" font-family="JetBrains Mono,monospace" '
+            f'font-size="7.5"{weight} fill="{fill}">{fmt(d)}</text>'
+        )
+    dates_str = "\n  ".join(dates)
+
     if total == 0:
         empty_msg = (
             f'<text x="{CX + CW / 2}" y="{CY + CH / 2}" text-anchor="middle" '
@@ -183,16 +201,14 @@ def build_svg(days, counts):
 
   <rect x="{CX}" y="{CY}" width="{CW}" height="{CH}" rx="2" fill="none" stroke="#21262d" stroke-width="1"/>
 
-  <text x="{CX}" y="216" font-family="JetBrains Mono,monospace" font-size="8" fill="#484f58">{fmt(days[0])}</text>
-  <text x="{CX + CW // 2}" y="216" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#484f58">{fmt(days[len(days) // 2])}</text>
-  <text x="{CX + CW}" y="216" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="8" fill="#484f58">{fmt(days[-1])}</text>
+  {dates_str}
 
-  <line x1="0" y1="232" x2="720" y2="232" stroke="#21262d" stroke-width="1"/>
-  <text x="{CX}" y="250" font-family="JetBrains Mono,monospace" font-size="9" fill="#484f58">generated {generated} · self-hosted, no third-party widgets</text>
-  <text x="{CX + CW}" y="250" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="9" fill="#484f58">$ git log --since="30.days"</text>
+  <line x1="0" y1="246" x2="720" y2="246" stroke="#21262d" stroke-width="1"/>
+  <text x="{CX}" y="264" font-family="JetBrains Mono,monospace" font-size="9" fill="#484f58">generated {generated} · self-hosted, no third-party widgets</text>
+  <text x="{CX + CW}" y="264" text-anchor="end" font-family="JetBrains Mono,monospace" font-size="9" fill="#484f58">$ git log --since="30.days"</text>
 
-  <line x1="0" y1="258" x2="720" y2="258" stroke="#21262d" stroke-width="1"/>
-  <text x="360" y="272" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#484f58" font-style="italic">"Small commits daily beat heroic rewrites."</text>
+  <line x1="0" y1="274" x2="720" y2="274" stroke="#21262d" stroke-width="1"/>
+  <text x="360" y="290" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="9" fill="#484f58" font-style="italic">"Small commits daily beat heroic rewrites."</text>
 </svg>
 """
 

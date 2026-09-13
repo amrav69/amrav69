@@ -53,6 +53,16 @@
 
 ---
 
+## 💻 Top Languages
+
+<div align="center">
+
+<img src="./top_langs.svg" alt="amrav69 top languages by commits — last 30 days" width="720"/>
+
+</div>
+
+---
+
 <div align="center">
 
 <!-- Algo trading terminal — self-hosted -->
