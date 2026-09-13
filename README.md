@@ -57,7 +57,7 @@
 
 <div align="center">
 
-<img src="./top_langs.svg" alt="amrav69 top languages by commits — last 30 days" width="720"/>
+<img src="./top_langs.svg" alt="amrav69 top languages by code size" width="720"/>
 
 </div>
 
