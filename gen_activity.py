@@ -116,33 +116,34 @@ def build_svg(days, counts):
         )
     grid_str = "\n  ".join(grid)
 
-    # Bars
+    # Bars — every non-zero bar gets its count on top. A <title> is also
+    # embedded so direct SVG views (blob/Raw) show a native tooltip.
+    # Note: GitHub renders README SVGs as static <img>, so hover can't
+    # work inside the README itself — always-on labels are the fix.
     bars = []
     slot = CW / len(counts)
     bw = slot * 0.58
     for i, c in enumerate(counts):
         x = CX + i * slot + (slot - bw) / 2
+        mid = x + bw / 2
         if c <= 0:
             bars.append(
-                f'<circle cx="{x + bw / 2:.1f}" cy="{CY + CH - 1:.1f}" r="1.2" fill="#21262d"/>')
+                f'<circle cx="{mid:.1f}" cy="{CY + CH - 1:.1f}" r="1.2" fill="#21262d"/>')
             continue
         h = max(4.0, (c / max_c) * (CH - 8)) if max_c else 4.0
         y = CY + CH - h
         color = "#FF6B35" if i == max_i else "#00D9FF"
+        plural = "s" if c != 1 else ""
         bars.append(
+            f'<g><title>{fmt(days[i])}: {c} commit{plural}</title>'
             f'<rect x="{x:.1f}" y="{y:.1f}" width="{bw:.1f}" height="{h:.1f}" '
-            f'fill="{color}" rx="2.5" opacity="0.92"/>')
+            f'fill="{color}" rx="2.5" opacity="0.92"/>'
+            f'<text x="{mid:.1f}" y="{y - 4:.1f}" text-anchor="middle" '
+            f'font-family="JetBrains Mono,monospace" font-size="8.5" font-weight="700" '
+            f'fill="{color}">{c}</text></g>')
     bars_str = "\n  ".join(bars)
 
     max_note = ""
-    if max_c > 0:
-        bx = CX + max_i * slot + slot / 2
-        by = CY + CH - max(4.0, CH - 8) - 10
-        max_note = (
-            f'<text x="{bx:.1f}" y="{by:.1f}" text-anchor="middle" '
-            f'font-family="JetBrains Mono,monospace" font-size="9" font-weight="700" '
-            f'fill="#FF6B35">{max_c}</text>'
-        )
 
     if total == 0:
         empty_msg = (
