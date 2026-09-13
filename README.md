@@ -43,6 +43,21 @@
 
 ---
 
+## ⏱️ Coding Activity
+
+<div align="center">
+
+<!--START_SECTION:waka-->
+```txt
+No coding activity yet — connect WakaTime to populate this section.
+Setup: add WAKATIME_API_KEY secret. See .github/workflows/waka.yml
+```
+<!--END_SECTION:waka-->
+
+</div>
+
+---
+
 <div align="center">
 
 <!-- Algo trading terminal — self-hosted -->
@@ -56,8 +71,8 @@
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-ram--sri--varma-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ram-sri-varma/)
-[![Email](https://img.shields.io/badge/Email-ramsrivarma5%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ramsrivarma5@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-amrav69-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amrav69)
+[![LINKEDIN](https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ram-sri-varma/)
+[![EMAIL](https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ramsrivarma5@gmail.com)
+[![GITHUB](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amrav69)
 
 </div>
