@@ -43,16 +43,11 @@
 
 ---
 
-## ⏱️ Coding Activity
+## 📈 Coding Activity
 
 <div align="center">
 
-<!--START_SECTION:waka-->
-```txt
-No coding activity yet — connect WakaTime to populate this section.
-Setup: add WAKATIME_API_KEY secret. See .github/workflows/waka.yml
-```
-<!--END_SECTION:waka-->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=amrav69&bg_color=0D1117&color=C9D1D9&line=00D9FF&point=FF6B35&area=true&hide_border=true&custom_title=Coding%20Activity%20--%20last%2031%20days" alt="amrav69 commit activity graph" width="720"/>
 
 </div>
 
