@@ -47,7 +47,7 @@
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=amrav69&bg_color=0D1117&color=C9D1D9&line=00D9FF&point=FF6B35&area=true&hide_border=true&custom_title=Coding%20Activity%20--%20last%2031%20days" alt="amrav69 commit activity graph" width="720"/>
+<img src="./activity.svg" alt="amrav69 commit activity — last 30 days" width="720"/>
 
 </div>
 
